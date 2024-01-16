@@ -1,13 +1,13 @@
 public class TesterGameOfLife {
 
     public static void main(String[] args) {
-        // if (args.length < 2) {
-        //     System.out.println("Usage: java TesterGameOfLife <functionName> <filename>");
-        //     return;
-        // }
+        if (args.length < 2) {
+            System.out.println("Usage: java TesterGameOfLife <functionName> <filename>");
+            return;
+        }
 
-        String functionName = "print";
-        String fileName = "pulsar.dat";
+        String functionName = args[0];
+        String fileName = args[1];
 
         switch (functionName) {
             case "print":
@@ -94,4 +94,3 @@ public class TesterGameOfLife {
     
     
 }    
-
